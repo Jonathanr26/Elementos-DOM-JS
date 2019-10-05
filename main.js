@@ -8,6 +8,34 @@ var btnDividir = document.querySelector('#btnDividir')
 var btnBorrar = document.querySelector('#btnBorrar')
 var btnProbar = document.querySelector('#btnProbar')
 
+inpNum1.addEventListener('keyup', () => {
+    let num = Number(inpNum1.value)
+
+    switch(num) {
+        case 1:
+            inpRes.value = 'Lunes'
+            break
+        case 2:
+            inpRes.value = 'Martes'
+            break
+        case 3:
+            inpRes.value = 'Miercoles'
+            break
+        case 4:
+            inpRes.value = 'Jueves'
+            break
+        case 5:
+            inpRes.value = 'Viernes'
+            break
+        case 6:
+        case 7:
+            inpRes.value = 'Fin de semana!'
+            break
+        default:
+            inpRes.value = 'Valor incorrecto'
+    }
+})
+
 btnProbar.addEventListener('click', () => {
     let num = Number(inpNum1.value)
 
